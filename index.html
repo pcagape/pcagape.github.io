@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><title>Paul Angielo Cagape - Web Developer / Game Developer</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script src="https://kit.fontawesome.com/1e8c0897f7.js" crossorigin="anonymous"></script><script src="https://code.createjs.com/1.0.0/createjs.min.js"></script><style>:root {
+    --COLOR1: #4A96D9;
+    --COLOR1TRANS: #4a96d93b;
+    --COLOR2: #59a8d9;
+    --COLOR3: #A9C6D9;
+    --COLOR4: #94E1F2;
+    --COLOR5: #F2F2F2;
+    --COLOR6: #080f16;
+    --COLOR6TRANS: #172f44;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body,
+  html {
+    background-color: var(--COLOR6);
+  }
+
+  .preload {
+    width: 37px;
+    height: 19px;
+    background: url('./images/game/player.png');
+
+    font-family:'MyFont1';
+    position: absolute;
+    left: calc(50vw - 25px);
+    bottom: calc(50vh - 25px);
+    transform: translateX(0%);
+    color: rgba(255, 255, 255, 0);
+  }
+  #loading-ship-exhaust {
+    height: 32px;
+    width: 32px;
+    background: transparent url('./images/game/exhaust.png') 0 0 no-repeat;
+    animation: animateLoadingExhaust 0.2s steps(2) infinite;
+    transform: translate(-55%, -10%);
+  }
+
+  @keyframes animateLoadingExhaust {
+      100% { background-position: -64px 0; }
+  }
+
+  @font-face {
+    font-family: 'MyFont1';
+    src: url('./fonts/GT-Walsheim-Rg.ttf');
+    src: local('☺'),
+      url('./fonts/GT-Walsheim-Rg.ttf') format('truetype')
+  }</style><body><div id="root"></div><div class="preload"><div id="loading-ship-exhaust">.</div></div><script src="main.js"></script></body></html>
